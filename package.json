@@ -1,0 +1,7 @@
+{
+  "name": "woodenlays-concept",
+  "private": true,
+  "scripts": {
+    "start": "node serve.js"
+  }
+}

@@ -62,7 +62,7 @@
     house: {
       category: "Māju būvniecība",
       title: "No projekta līdz dzīvošanai",
-      description: "Woodenlays nodrošina pilnu privātmājas būvniecības ciklu — no plāna un pamatiem līdz ārējai un iekšējai apdarei.",
+      description: "Woodenlays nodrošina pilnu privātmājas būvniecības ciklu - no plāna un pamatiem līdz ārējai un iekšējai apdarei.",
       items: ["Projekta izstrāde un plānošana", "Pamatu un konstrukcijas izbūve", "Jumts, fasāde un iekšdarbi"],
       images: ["assets/images/house-construction.jpg"],
       alts: ["Privātmāja būvniecības procesā"]
@@ -155,32 +155,6 @@
     renderDialogImage();
   });
   dialog.querySelector("[data-dialog-cta]").addEventListener("click", () => dialog.close());
-
-  const form = document.querySelector("#contact-form");
-  const formStatus = form.querySelector(".form-status");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const fields = [...form.querySelectorAll("[required]")];
-    fields.forEach((field) => field.removeAttribute("aria-invalid"));
-    const invalid = fields.find((field) => !field.value.trim());
-    const phone = form.elements.phone;
-    if (invalid) {
-      invalid.setAttribute("aria-invalid", "true");
-      invalid.focus();
-      formStatus.className = "form-status";
-      formStatus.textContent = "Lūdzu, aizpildiet vārdu, tālruni un izvēlieties darba virzienu.";
-      return;
-    }
-    if ((phone.value.match(/\d/g) || []).length < 6) {
-      phone.setAttribute("aria-invalid", "true");
-      phone.focus();
-      formStatus.className = "form-status";
-      formStatus.textContent = "Lūdzu, pārbaudiet tālruņa numuru.";
-      return;
-    }
-    formStatus.className = "form-status is-success";
-    formStatus.textContent = "Pieteikuma forma ir gatava pieslēgšanai. Koncepta versijā dati netiek nosūtīti.";
-  });
 
   document.querySelector("[data-year]").textContent = new Date().getFullYear();
 })();

@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Woodenlays — privātmāju būvniecība no projekta līdz dzīvošanai Rīgā, Liepājā un visā Latvijā.">
+  <meta name="description" content="Woodenlays - privātmāju būvniecība no projekta līdz dzīvošanai Rīgā, Liepājā un visā Latvijā.">
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#123d2b">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
-  <title>Woodenlays — no projekta līdz dzīvošanai</title>
+  <title>Woodenlays - no projekta līdz dzīvošanai</title>
   <link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/images/house-construction.jpg" as="image" fetchpriority="high">
   <link rel="icon" href="assets/images/woodenlays-logo.png" type="image/png">
@@ -17,7 +17,7 @@
   <a class="skip-link" href="#saturs">Pāriet uz saturu</a>
 
   <header class="site-header" data-header>
-    <a class="brand" href="#sakums" aria-label="Woodenlays — sākums">
+    <a class="brand" href="#sakums" aria-label="Woodenlays - sākums">
       <img src="assets/images/woodenlays-logo.png" width="471" height="244" alt="Woodenlays">
     </a>
     <nav class="desktop-nav" aria-label="Galvenā navigācija">
@@ -56,7 +56,7 @@
           <span>No projekta</span>
           <em>līdz dzīvošanai.</em>
         </h1>
-        <p class="hero-lead reveal">Projektēšana, būvniecība un apdare vienā komandā — ar skaidru darbu secību no pirmās sarunas līdz gatavai mājai.</p>
+        <p class="hero-lead reveal">Projektēšana, būvniecība un apdare vienā komandā - ar skaidru darbu secību no pirmās sarunas līdz gatavai mājai.</p>
         <div class="hero-actions reveal">
           <a class="button" href="#projekti">Apskatīt projektus <span aria-hidden="true">↘</span></a>
           <a class="text-link" href="tel:+37127000536">Pārrunāt ieceri <span aria-hidden="true">↗</span></a>
@@ -72,7 +72,7 @@
       </figure>
       <dl class="hero-proof reveal" aria-label="Woodenlays priekšrocības">
         <div><dt>10+</dt><dd>gadu pieredze būvniecībā</dd></div>
-        <div><dt>A–Z</dt><dd>no projekta līdz apdarei</dd></div>
+        <div><dt>A-Z</dt><dd>no projekta līdz apdarei</dd></div>
         <div><dt>LV</dt><dd>darbi visā Latvijā</dd></div>
       </dl>
     </section>
@@ -81,7 +81,7 @@
       <header class="section-heading reveal">
         <div>
           <p class="kicker">Darbi un virzieni</p>
-          <h2 id="projects-title">Vispirms — apskatīt. Tad apspriest.</h2>
+          <h2 id="projects-title">Vispirms - apskatīt. Tad apspriest.</h2>
         </div>
         <p>Izvēlieties interesējošo darbu virzienu. Katru piemēru var atvērt un uzreiz pāriet pie konsultācijas.</p>
       </header>
@@ -184,19 +184,19 @@
         <div class="contact-links">
           <a href="tel:+37127000536"><small>Tālrunis</small><strong>+371 27 000 536</strong></a>
           <a href="mailto:info@woodenlays.lv"><small>E-pasts</small><strong>info@woodenlays.lv</strong></a>
-          <p><small>Darba laiks</small><strong>Pr–Pk 8:00–21:00</strong></p>
+          <p><small>Darba laiks</small><strong>Pr-Pk 8:00-21:00</strong></p>
           <p><small>Adrese</small><strong>Dīķa iela 11, Liepāja</strong></p>
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contact-form" novalidate>
+      <form class="contact-form reveal" id="contact-form" novalidate data-mailto="info@woodenlays.lv" data-mail-subject="Pieteikums konsultācijai no Woodenlays mājaslapas" data-err-required="Lūdzu, aizpildiet šo lauku." data-err-phone="Lūdzu, pārbaudiet tālruņa numuru." data-err-color="#ffb19d" data-ok-class="is-success" data-mail-ok="Atveram e-pasta programmu ar sagatavotu vēstuli. Lai nosūtītu pieteikumu, nosūtiet šo vēstuli. Vai zvaniet: +371 27 000 536.">
         <div class="form-head"><span>01</span><p>Atbildiet uz trim īsiem jautājumiem</p></div>
         <label>Jūsu vārds<input type="text" name="name" autocomplete="name" maxlength="80" enterkeyhint="next" required></label>
         <label>Tālruņa numurs<input type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="30" enterkeyhint="next" required></label>
         <label>Ko plānojat?<select name="project" required><option value="">Izvēlieties virzienu</option><option>Mājas būvniecība</option><option>Jumta darbi</option><option>Fasādes darbi</option><option>Remonts</option><option>Demontāža</option></select></label>
         <label>Papildu informācija<textarea name="message" rows="3" maxlength="700" placeholder="Pilsēta, aptuvenais apjoms vai īss situācijas apraksts"></textarea></label>
         <button class="button button--light" type="submit">Pieteikt konsultāciju <span aria-hidden="true">↗</span></button>
-        <p class="form-status" aria-live="polite"></p>
+        <p class="form-status" aria-live="polite" data-mail-status></p>
       </form>
     </section>
   </main>
@@ -209,7 +209,7 @@
       <a href="https://www.instagram.com/liepajasjumti/" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="https://wa.link/1q2208" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
-    <small>© <span data-year></span> SIA Woodenlays. Mājaslapas koncepts.</small>
+    <small>© <span data-year></span> SIA Woodenlays.</small>
   </footer>
 
   <div class="mobile-dock" aria-label="Ātrā saziņa">
@@ -236,6 +236,7 @@
     </div>
   </dialog>
 
+  <script src="form.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
